@@ -1,0 +1,70 @@
+body{
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    width: auto;
+    margin-top: 120px;
+}
+.form-style input{
+	border:0;
+	height:50px;
+	border-radius:0;
+    border-bottom:1px solid #ebebeb;	
+}
+.form-style input:focus{
+    border-bottom:1px solid #007bff;	
+    box-shadow:none;
+    outline:0;
+    background-color:#ebebeb;	
+}
+.sideline {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	color:#ccc;
+}
+button{
+    height:50px;	
+}
+.sideline:before,
+.sideline:after {
+    content: '';
+    border-top: 1px solid #ebebeb;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+.sideline:after {
+    margin: 0 0 0 20px;
+}
+
+#btn1 {
+    font-size: 30px;
+}
+
+#btn1 .twitter :hover {
+        color:#1DA1F2;
+        font-size:40px;
+}
+
+#btn1 .facebook :hover {
+        color:#4267B2;
+        font-size:40px;
+}
+
+#btn1 .instagram :hover {
+        color:#C13584;
+        font-size:40px;
+}
+
+#btn1 .whatsapp :hover {
+        color:#25D366;
+        font-size:40px;
+}
+
+#btn1 .google-plus :hover {
+        color:#4285F4;
+        font-size:40px;
+}
