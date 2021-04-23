@@ -69,27 +69,37 @@
   <Section id="hero">
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" style="padding-top: 200px; padding-left: 250px;">
+    <section id="signup" class="singup">
+      <div class="container" style="padding-top: 200px; padding-left: 100px;">
 
-        {% csrf_token %}
-        <form action="{% url 'login' %}" method="post" role="form" >
+        
+        <form action="{% url 'signup' %}" method="post" role="form" >
           <div class="row" ">
-            
-            <div class="col-md-4 form-group mt-3 mt-md-0">
+            {% csrf_token %}
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="fname" class="form-control" name="fname" id="fname" placeholder="Your First Name" required>
+              </div>
+
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="lname" class="form-control" name="lname" id="lname" placeholder="Your Last Name" required>
+              </div>
+            </br></br></br>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
             </div>
-            
-            <div class="col-md-4 form-group mt-3 mt-md-0">
+        
+            <div class="col-md-6 form-group mt-3 mt-md-0">
               <input type="password" class="form-control" name="password" id="password" placeholder="Your Password" required>
             </div>
           </div>
-        </br>
+        </br></br>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            
+          </div>
           
-          
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit">Register</button></div>
         </form>
-        <a href="{% url 'signup' %}" >Create an Account </a>
+        
       </div>
     </section><!-- End Contact Section -->
 
